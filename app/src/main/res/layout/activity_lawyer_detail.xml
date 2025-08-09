@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado con imagen, nombre y botones -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="224dp">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_circle" />
+
+            <!-- Barra superior con botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_arrow_back"
+                    android:contentDescription="@string/volver"
+                    app:tint="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_edit"
+                    android:contentDescription="@string/editar"
+                    app:tint="@android:color/black" />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:contentDescription="@string/eliminar"
+                    app:tint="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Nombre del abogado -->
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="5dp"
+                android:text="Nombre del Abogado"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:background="#66000000" />
+        </FrameLayout>
+
+        <!-- Contenido de detalles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingStart="72dp"
+            android:paddingEnd="5dp">
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="300 200 3333" />
+
+            <!-- Especialidad -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidad"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Abogado de derechos laborales" />
+
+            <!-- Biografía -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biografía"
+                android:textColor="@color/teal_700"
+                android:paddingBottom="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Gran profesional con más de 3 años de experiencia en defensa de los trabajadores." />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

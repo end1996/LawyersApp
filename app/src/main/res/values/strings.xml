@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lawyers App</string>
+    <string name="nombre_del_abogado">Nombre del abogado</string>
+    <string name="especialidad">Especialidad</string>
+    <string name="telefono">Teléfono</string>
+    <string name="biografia">Biografía</string>
+    <string name="guardar">Guardar</string>
+    <string name="avatar">Avatar</string>
+    <string name="volver">volver</string>
+    <string name="eliminar">eliminar</string>
+    <string name="editar">editar</string>
+    <string name="agregar_abogado">Agregar abogado</string>
+    <string name="editar_abogado">Editar abogado</string>
+</resources>
